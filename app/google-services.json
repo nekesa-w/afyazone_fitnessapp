@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "59697324355",
+    "firebase_url": "https://projectapplication-4d5bf-default-rtdb.firebaseio.com",
     "project_id": "projectapplication-4d5bf",
     "storage_bucket": "projectapplication-4d5bf.appspot.com"
   },
@@ -12,7 +13,20 @@
           "package_name": "com.example.mainprojectapplication"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "59697324355-c96ohanv3q9el0b3odn2e7ndd2sttaun.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mainprojectapplication",
+            "certificate_hash": "d1cbd232fe8e0ac2e98602a8f92f1c90f2e34320"
+          }
+        },
+        {
+          "client_id": "59697324355-cduavjnoumq5mfq5a7bj0opdtl7a1vv3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyCXepHGyM1gngb0aOYSNzDa48BEKiqLVJU"
@@ -20,7 +34,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "59697324355-cduavjnoumq5mfq5a7bj0opdtl7a1vv3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     },
@@ -31,7 +50,12 @@
           "package_name": "com.example.projectapplication"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "59697324355-cduavjnoumq5mfq5a7bj0opdtl7a1vv3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyCXepHGyM1gngb0aOYSNzDa48BEKiqLVJU"
@@ -39,7 +63,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "59697324355-cduavjnoumq5mfq5a7bj0opdtl7a1vv3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }
