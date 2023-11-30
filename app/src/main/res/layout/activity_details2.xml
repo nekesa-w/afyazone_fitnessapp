@@ -8,6 +8,49 @@
     tools:context=".DetailsActivity2">
 
     <TextView
+        android:id="@+id/expected_weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="20dp"
+        android:text="Enter Your Expected Weight"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/rectangle4"
+        android:layout_width="89dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/edittext_border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/expected_kg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginEnd="250dp"
+        android:layout_marginBottom="568dp"
+        android:text="kg"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
         android:id="@+id/details"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -27,10 +70,26 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="184dp"
         android:layout_marginEnd="20dp"
-        android:text="Enter Your Fitness Goal"
+        android:text="Describe your exercise habits"
 
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fit_level"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="452dp"
+        android:layout_marginEnd="20dp"
+        android:text="What is Your Fitness Level"
         android:textAlignment="textStart"
         android:textColor="@color/white"
         android:textSize="20dp"
@@ -41,59 +100,51 @@
 
     <RadioGroup
         android:id="@+id/radioGroupGoal"
-        android:layout_width="370dp"
-        android:layout_height="144dp"
+        android:layout_width="369dp"
+        android:layout_height="201dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="44dp"
         android:layout_marginEnd="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/goal">
 
         <RadioButton
-            android:id="@+id/radioButtonLoss"
+            android:id="@+id/radioButtonSedentary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Weight Loss"
+            android:text="Sedentary - very minmal activity"
             android:textColor="@color/white" />
 
         <RadioButton
-            android:id="@+id/radioButtonGain"
+            android:id="@+id/radioButtonFairlyActive"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Weight Gain"
+            android:text="Fairly active"
             android:textColor="@color/white" />
 
         <RadioButton
-            android:id="@+id/radioButtonEndurance"
+            android:id="@+id/radioButtonActive"
             android:layout_width="182dp"
             android:layout_height="wrap_content"
-            android:text="Increase endurance"
+            android:text="Active"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/radioButtonVeryActive"
+            android:layout_width="182dp"
+            android:layout_height="wrap_content"
+            android:text="Very active"
             android:textColor="@color/white" />
     </RadioGroup>
-
-    <TextView
-        android:id="@+id/fit_level"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="268dp"
-        android:layout_marginEnd="20dp"
-        android:text="What is Your Fitness Goal"
-        android:textAlignment="textStart"
-        android:textColor="@color/white"
-        android:textSize="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <RadioGroup
         android:id="@+id/radioGroupGender"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -123,57 +174,21 @@
 
     </RadioGroup>
 
-    <TextView
-        android:id="@+id/freq_exercise"
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/nextButton2"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="460dp"
-        android:layout_marginEnd="20dp"
-        android:text="How Often Do You Want To Exercise"
-        android:textAlignment="textStart"
-        android:textColor="@color/white"
-        android:textSize="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="664dp"
+        android:layout_marginEnd="150dp"
+        android:backgroundTint="@color/green"
 
-    <RadioGroup
-        android:id="@+id/radioGroupFrequency"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="204dp"
-        android:layout_marginEnd="20dp"
+        android:text="Next"
         app:layout_constraintEnd_toEndOf="parent"
+
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fit_level">
-
-        <RadioButton
-            android:id="@+id/radioButton1week"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="1-2 times a week"
-            android:textColor="@color/white" />
-
-        <RadioButton
-            android:id="@+id/radioButton3week"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="3-4 times a week"
-            android:textColor="@color/white" />
-
-        <RadioButton
-            android:id="@+id/radioButton4week"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="4-5 times a week"
-            android:textColor="@color/white" />
-
-
-    </RadioGroup>
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
