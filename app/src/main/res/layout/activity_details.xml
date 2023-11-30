@@ -44,7 +44,7 @@
         android:layout_height="50dp"
         android:layout_marginStart="40dp"
         android:background="@drawable/edittext_border"
-        app:layout_constraintBottom_toTopOf="@id/height"
+        app:layout_constraintBottom_toTopOf="@id/goalweight"
         app:layout_constraintEnd_toStartOf="@id/kg"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/weight" />
@@ -57,10 +57,52 @@
         android:text="@string/kg"
         android:textColor="@color/white"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@id/height"
+        app:layout_constraintBottom_toTopOf="@id/goalweight"
         app:layout_constraintEnd_toEndOf="match_content"
         app:layout_constraintStart_toEndOf="@id/rectangle1"
         app:layout_constraintTop_toBottomOf="@id/weight"/>
+
+    <TextView
+        android:id="@+id/goalweight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="10dp"
+        android:text="Enter Your Goal Weight"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/rectangle4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/kg2" />
+
+    <EditText
+        android:id="@+id/rectangle4"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/edittext_border"
+        app:layout_constraintBottom_toTopOf="@id/height"
+        app:layout_constraintEnd_toStartOf="@id/kg2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/goalweight" />
+
+    <TextView
+        android:id="@+id/kg2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="@string/kg"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/height"
+        app:layout_constraintEnd_toEndOf="match_content"
+        app:layout_constraintStart_toEndOf="@id/rectangle4"
+        app:layout_constraintTop_toBottomOf="@id/goalweight"/>
+
 
     <TextView
         android:id="@+id/height"
