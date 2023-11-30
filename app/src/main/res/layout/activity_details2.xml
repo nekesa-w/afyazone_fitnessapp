@@ -4,58 +4,55 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/black"
+    android:background="#1C1A1A"
     tools:context=".DetailsActivity2">
 
     <TextView
         android:id="@+id/details"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="9dp"
-        android:text="Enter Your Details"
-        android:textAlignment="viewStart"
+        android:layout_marginTop="80dp"
+        android:text="@string/details"
         android:textColor="@color/white"
-        android:textSize="40dp"
+        android:textSize="40sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/goal"/>
 
     <TextView
         android:id="@+id/goal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="68dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
         android:text="Enter Your Fitness Goal"
-
         android:textAlignment="textStart"
         android:textColor="@color/white"
-        android:textSize="20dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/radioGroupGoal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/details"/>
 
     <RadioGroup
         android:id="@+id/radioGroupGoal"
         android:layout_width="370dp"
         android:layout_height="144dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginStart="80dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/fit_level"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/goal">
+        app:layout_constraintTop_toBottomOf="@id/goal">
 
         <RadioButton
             android:id="@+id/radioButtonLoss"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Weight Loss"
+            android:textSize="20sp"
             android:textColor="@color/white" />
 
         <RadioButton
@@ -63,13 +60,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Weight Gain"
+            android:textSize="20sp"
             android:textColor="@color/white" />
 
         <RadioButton
             android:id="@+id/radioButtonEndurance"
-            android:layout_width="182dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Increase endurance"
+            android:textSize="20sp"
             android:textColor="@color/white" />
     </RadioGroup>
 
@@ -77,26 +76,25 @@
         android:id="@+id/fit_level"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="268dp"
-        android:layout_marginEnd="20dp"
-        android:text="What is Your Fitness Goal"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:text="Enter Your Fitness Level"
         android:textAlignment="textStart"
         android:textColor="@color/white"
-        android:textSize="20dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/radioGroupExercise"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/radioGroupGoal" />
 
     <RadioGroup
-        android:id="@+id/radioGroupGender"
+        android:id="@+id/radioGroupExercise"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginStart="60dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/freq_exercise"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fit_level">
 
@@ -105,6 +103,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Beginner"
+            android:textSize="20sp"
             android:textColor="@color/white" />
 
         <RadioButton
@@ -112,6 +111,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Intermediate"
+            android:textSize="20sp"
             android:textColor="@color/white" />
 
         <RadioButton
@@ -119,6 +119,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Expert"
+            android:textSize="20sp"
             android:textColor="@color/white" />
 
     </RadioGroup>
@@ -127,35 +128,34 @@
         android:id="@+id/freq_exercise"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="460dp"
-        android:layout_marginEnd="20dp"
-        android:text="How Often Do You Want To Exercise"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:text="Enter Preferred Exercise Frequency"
         android:textAlignment="textStart"
         android:textColor="@color/white"
-        android:textSize="20dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/radioGroupExercise"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/radioGroupFrequency" />
 
     <RadioGroup
         android:id="@+id/radioGroupFrequency"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="204dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginStart="60dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/finishButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fit_level">
+        app:layout_constraintTop_toBottomOf="@id/freq_exercise">
 
         <RadioButton
             android:id="@+id/radioButton1week"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="1-2 times a week"
+            android:textSize="20sp"
             android:textColor="@color/white" />
 
         <RadioButton
@@ -163,6 +163,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="3-4 times a week"
+            android:textSize="20sp"
             android:textColor="@color/white" />
 
         <RadioButton
@@ -170,10 +171,24 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="4-5 times a week"
+            android:textSize="20sp"
             android:textColor="@color/white" />
 
 
     </RadioGroup>
+
+        <Button
+        android:id="@+id/finishButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/green"
+        android:layout_marginBottom="20dp"
+        android:text="Finish"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radioGroupFrequency" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
