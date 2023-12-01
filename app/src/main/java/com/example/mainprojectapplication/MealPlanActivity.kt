@@ -9,7 +9,7 @@ class MealPlanActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_exercises)
+        setContentView(R.layout.activity_mealplan)
 
         val bottomNavigationView: BottomNavigationView = findViewById(R.id.mealBottomNavigationView)
 

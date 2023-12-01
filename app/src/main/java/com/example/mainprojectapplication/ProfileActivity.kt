@@ -69,24 +69,24 @@ class ProfileActivity : AppCompatActivity() {
 
         // Retrieve data from SharedPreferences
         val username = sharedPreferences.getString("Username", "None")
-        val weight = sharedPreferences.getString("Weight", "None")
-        val height = sharedPreferences.getString("Height", "None")
-        val age = sharedPreferences.getString("Age", "None")
-        val goalWeight = sharedPreferences.getString("GoalWeight", "None")
+        val weight = sharedPreferences.getInt("Weight", 0).toString() // Use getInt and convert to String
+        val height = sharedPreferences.getInt("Height", 0).toString() // Use getInt and convert to String
+        val age = sharedPreferences.getInt("Age", 0).toString() // Use getInt and convert to String
+        val goalWeight = sharedPreferences.getInt("GoalWeight", 0).toString() // Use getInt and convert to String
         val gender = sharedPreferences.getString("Gender", "None")
         val goal = sharedPreferences.getString("Goal", "None")
         val exercise = sharedPreferences.getString("Exercise", "None")
-        val frequency = sharedPreferences.getString("Frequency", "None")
+        val frequency = sharedPreferences.getInt("Frequency", 0).toString() // Use getInt and convert to String
 
         // Display data in TextViews
-        nameTextView.text = "Username: $username"
-        weightTextView.text = "Weight: $weight"
-        heightTextView.text = "Height: $height"
-        ageTextView.text = "Age: $age"
-        goalWeightTextView.text = "Goal Weight: $goalWeight"
-        genderTextView.text = "Gender: $gender"
-        goalTextView.text = "Goal: $goal"
-        exerciseTextView.text = "Exercise: $exercise"
-        frequencyTextView.text = "Frequency: $frequency"
+        nameTextView.text = "Username:\n$username"
+        weightTextView.text = "Weight:\n$weight"
+        heightTextView.text = "Height:\n$height"
+        ageTextView.text = "Age:\n$age"
+        goalWeightTextView.text = "Goal Weight:\n$goalWeight"
+        genderTextView.text = "Gender:\n$gender"
+        goalTextView.text = "Fitness Goal:\n$goal"
+        exerciseTextView.text = "Fitness Level:\n$exercise"
+        frequencyTextView.text = "Days per Week Of Exercise:\n$frequency"
     }
 }
