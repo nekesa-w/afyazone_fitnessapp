@@ -8,17 +8,17 @@ import android.widget.NumberPicker
 import android.widget.RadioButton
 import android.widget.RadioGroup
 import androidx.appcompat.app.AppCompatActivity
-import com.example.mainprojectapplication.databinding.ActivityDetailsBinding
+import com.example.mainprojectapplication.databinding.ActivityEditDetailsBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-class DetailsActivity : AppCompatActivity() {
+class EditDetails : AppCompatActivity() {
 
-    private lateinit var binding : ActivityDetailsBinding
+    private lateinit var binding : ActivityEditDetailsBinding
     private val sharedPreferencesKey = "MySharedPreferences"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityDetailsBinding.inflate(layoutInflater)
+        binding = ActivityEditDetailsBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         val sharedPreferences = getSharedPreferences(sharedPreferencesKey, Context.MODE_PRIVATE)
@@ -66,7 +66,7 @@ class DetailsActivity : AppCompatActivity() {
                 frequencyPicker.value,
                 username
             )
-            startActivity(Intent(this@DetailsActivity,LoginActivity::class.java))
+            startActivity(Intent(this@EditDetails,ProfileActivity::class.java))
             finish()
         }
 

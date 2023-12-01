@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#1C1A1A"
-    tools:context=".DetailsActivity">
+    tools:context=".ExerciseActivity">
 
     <TextView
         android:id="@+id/exercises"
@@ -21,62 +21,36 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/catexercises"/>
+
+    <TextView
+        android:id="@+id/catexercises"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Exercises"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/exercises"
         app:layout_constraintBottom_toTopOf="@id/scrollexercise"/>
 
     <ScrollView
         android:id="@+id/scrollexercise"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:padding="8dp"
-        app:layout_constraintTop_toBottomOf="@id/exercises"
-        app:layout_constraintBottom_toTopOf="@id/BottomNavigationView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        android:layout_height="match_parent">
 
         <LinearLayout
+            android:id="@+id/exerciseContainer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-
-            <!-- TextViews for different exercises -->
-            <TextView
-                android:id="@+id/cardio"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="Cardio"
-                android:textAlignment="center"
-                android:textColor="@color/white"
-                android:textSize="20sp"
-                android:textStyle="bold"/>
-
-            <TextView
-                android:id="@+id/straining"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="Strength Training"
-                android:textAlignment="center"
-                android:textColor="@color/white"
-                android:textSize="20sp"
-                android:textStyle="bold"/>
-
-            <TextView
-                android:id="@+id/upperbody"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="Upper Body"
-                android:textAlignment="center"
-                android:textColor="@color/white"
-                android:textSize="20sp"/>
-
-            <TextView
-                android:id="@+id/lowerbody"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="Lower Body"
-                android:textAlignment="center"
-                android:textColor="@color/white"
-                android:textSize="20sp"/>
+            <!-- Exercise items will be added dynamically here -->
         </LinearLayout>
+
     </ScrollView>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView

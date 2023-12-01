@@ -8,28 +8,28 @@
     tools:context=".EditDetails">
 
     <TextView
-        android:id="@+id/details"
+        android:id="@+id/editdetails"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
-        android:text="Enter Your Details"
+        android:text="Edit Your Details"
         android:textColor="@color/white"
         android:textSize="40sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/scrolldetail"/>
+        app:layout_constraintBottom_toTopOf="@id/scrolledit"/>
 
     <ScrollView
-        android:id="@+id/scrolldetail"
+        android:id="@+id/scrolledit"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:padding="10dp"
         app:layout_constraintBottom_toTopOf="@id/BottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/details">
+        app:layout_constraintTop_toBottomOf="@id/editdetails">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -51,7 +51,7 @@
                 app:layout_constraintBottom_toTopOf="@id/rectangle1"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/details" />
+                app:layout_constraintTop_toBottomOf="@id/editdetails" />
 
             <NumberPicker
                 android:id="@+id/rectangle1"

@@ -23,7 +23,6 @@
         android:id="@+id/text_welcome"
         android:layout_width="230dp"
         android:layout_height="120dp"
-        android:layout_marginBottom="120dp"
         android:text="@string/welcome"
         android:textAlignment="center"
         android:textColor="@color/white"
@@ -38,9 +37,8 @@
         android:id="@+id/signupbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="40dp"
         android:text="@string/sign_up"
-        android:textSize="30sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:backgroundTint="@color/green"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -52,15 +50,13 @@
         android:id="@+id/loginbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="40dp"
         android:text="@string/login"
-        android:textSize="30sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:backgroundTint="@color/green"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/signupbutton"
-        app:layout_constraintTop_toBottomOf="@id/text_welcome"
-        app:layout_constraintVertical_bias="0.928" />
+        app:layout_constraintTop_toBottomOf="@id/text_welcome" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

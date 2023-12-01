@@ -57,7 +57,7 @@ class SignupActivity : AppCompatActivity() {
                         val userData = UserData(id, username, email, password) // Update this line
                         databaseReference.child(id!!).setValue(userData)
                         Toast.makeText(this@SignupActivity, "Sign up successful", Toast.LENGTH_SHORT).show()
-                        startActivity(Intent(this@SignupActivity, LoginActivity::class.java))
+                        startActivity(Intent(this@SignupActivity, DetailsActivity::class.java))
                         finish()
                     } else {
                         Toast.makeText(this@SignupActivity, "User already exists", Toast.LENGTH_SHORT).show()
