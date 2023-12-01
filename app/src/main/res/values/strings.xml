@@ -1,3 +1,24 @@
 <resources>
     <string name="app_name">MainProjectApplication</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="login">Login</string>
+    <string name="sign_up_google">Sign Up with Google</string>
+    <string name="welcome">Welcome To Afyazone</string>
+    <string name="afyazone">Afyazone</string>
+    <string name="username">Enter Username</string>
+    <string name="password">Enter Password</string>
+    <string name="email">Enter Valid Email </string>
+    <string name="login2signup">Don\'t have an account? Sign Up Here</string>
+    <string name="signup2login">Already registered? Login Here</string>
+    <string name="details">Enter Your Details</string>
+    <string name="weight">Enter Your Current Weight</string>
+    <string name="height">Enter Your Current Height</string>
+    <string name="age">Enter Your Current Age</string>
+    <string name="gender">Enter Your Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="next">Next</string>
+    <string name="cm">cm</string>
+    <string name="kg">kg</string>
+
 </resources>

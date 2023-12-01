@@ -1,5 +1,6 @@
 package com.example.mainprojectapplication
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -16,6 +17,7 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var binding : ActivityLoginBinding
     private lateinit var firebaseDatabase : FirebaseDatabase
     private lateinit var databaseReference: DatabaseReference
+    private val sharedPreferencesKey = "MySharedPreferences"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,9 +29,14 @@ class LoginActivity : AppCompatActivity() {
 
         binding.loginButton.setOnClickListener {
             val loginUsername = binding.loginUsername.text.toString()
-            var loginPassword = binding.loginPassword.text.toString()
+            val loginPassword = binding.loginPassword.text.toString()
 
             if (loginUsername.isNotEmpty() && loginPassword.isNotEmpty()){
+                val sharedPreferences = getSharedPreferences(sharedPreferencesKey, Context.MODE_PRIVATE)
+                val editor = sharedPreferences.edit()
+                editor.putString("Username", loginUsername)
+                editor.apply()
+
                 loginUsers(loginUsername, loginPassword)
             }else{
                 Toast.makeText(this@LoginActivity,"All fields are mandatory",Toast.LENGTH_SHORT).show()
@@ -51,7 +58,8 @@ class LoginActivity : AppCompatActivity() {
 
                         if (userData != null && userData.password == password) {
                             Toast.makeText(this@LoginActivity, "Login successful", Toast.LENGTH_SHORT).show()
-                            startActivity(Intent(this@LoginActivity, MainActivity::class.java))
+
+                            startActivity(Intent(this@LoginActivity, ProfileActivity::class.java))
                             finish()
                             return
                         } else {
@@ -68,7 +76,4 @@ class LoginActivity : AppCompatActivity() {
             }
         })
     }
-
-
-
 }
