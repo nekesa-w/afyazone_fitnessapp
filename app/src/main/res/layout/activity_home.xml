@@ -28,13 +28,13 @@
         android:textColor="@color/white"
         android:textStyle="bold"
         android:textSize="40sp"
-        app:layout_constraintBottom_toTopOf="@id/signupbutton"
+        app:layout_constraintBottom_toTopOf="@id/signuphomebutton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/image_logo" />
 
     <Button
-        android:id="@+id/signupbutton"
+        android:id="@+id/signuphomebutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/sign_up"
@@ -42,12 +42,12 @@
         android:textStyle="bold"
         app:backgroundTint="@color/green"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/loginbutton"
+        app:layout_constraintEnd_toStartOf="@id/loginhomebutton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/text_welcome"/>
 
     <Button
-        android:id="@+id/loginbutton"
+        android:id="@+id/loginhomebutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/login"
@@ -56,7 +56,7 @@
         app:backgroundTint="@color/green"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/signupbutton"
+        app:layout_constraintStart_toEndOf="@id/signuphomebutton"
         app:layout_constraintTop_toBottomOf="@id/text_welcome" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -24,13 +24,13 @@ class EditDetails : AppCompatActivity() {
         val sharedPreferences = getSharedPreferences(sharedPreferencesKey, Context.MODE_PRIVATE)
         val username = sharedPreferences.getString("Username", "")
 
-        val weightPicker: NumberPicker = findViewById(R.id.rectangle1)
-        val goalWeightPicker: NumberPicker = findViewById(R.id.rectangle4)
-        val heightPicker: NumberPicker = findViewById(R.id.rectangle2)
-        val agePicker: NumberPicker = findViewById(R.id.rectangle3)
-        val radioGroupGoal: RadioGroup = findViewById(R.id.radioGroupGoal)
-        val radioGroupExercise: RadioGroup = findViewById(R.id.radioGroupExercise)
-        val frequencyPicker: NumberPicker = findViewById(R.id.rectangle5)
+        val weightPicker: NumberPicker = findViewById(R.id.editrectangle1)
+        val goalWeightPicker: NumberPicker = findViewById(R.id.editrectangle4)
+        val heightPicker: NumberPicker = findViewById(R.id.editrectangle2)
+        val agePicker: NumberPicker = findViewById(R.id.editrectangle3)
+        val radioGroupGoal: RadioGroup = findViewById(R.id.editradioGroupGoal)
+        val radioGroupExercise: RadioGroup = findViewById(R.id.editradioGroupExercise)
+        val frequencyPicker: NumberPicker = findViewById(R.id.editrectangle5)
 
         // Set min and max values for NumberPickers
         weightPicker.minValue = 30
@@ -70,7 +70,7 @@ class EditDetails : AppCompatActivity() {
             finish()
         }
 
-        val bottomNavigationView: BottomNavigationView = findViewById(R.id.BottomNavigationView)
+        val bottomNavigationView: BottomNavigationView = findViewById(R.id.editBottomNavigationView)
 
         // Set up item selection listener
         bottomNavigationView.setOnItemSelectedListener { menuItem ->
@@ -95,7 +95,7 @@ class EditDetails : AppCompatActivity() {
                     startActivity(intent)
                     true
                 }
-                else -> return@setOnItemSelectedListener false
+                else -> false
             }
         }
     }
@@ -134,11 +134,11 @@ class EditDetails : AppCompatActivity() {
     }
 
     private fun getSelectedGender(): String {
-        val genderRadioGroup: RadioGroup = findViewById(R.id.radioGroupGender)
+        val genderRadioGroup: RadioGroup = findViewById(R.id.editradioGroupGender)
 
         return when (genderRadioGroup.checkedRadioButtonId) {
-            R.id.radioButtonMale -> "Male"
-            R.id.radioButtonFemale -> "Female"
+            R.id.editradioButtonMale -> "Male"
+            R.id.editradioButtonFemale -> "Female"
             else -> "" // Handle other cases as needed
         }
     }

@@ -70,7 +70,7 @@ class DetailsActivity : AppCompatActivity() {
             finish()
         }
 
-        val bottomNavigationView: BottomNavigationView = findViewById(R.id.BottomNavigationView)
+        val bottomNavigationView: BottomNavigationView = findViewById(R.id.detailsBottomNavigationView)
 
         // Set up item selection listener
         bottomNavigationView.setOnItemSelectedListener { menuItem ->

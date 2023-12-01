@@ -20,12 +20,12 @@ class ProfileActivity : AppCompatActivity() {
 
         displayProfileData()
 
-        binding.editdetails.setOnClickListener {
+        binding.edityourdetails.setOnClickListener {
             startActivity(Intent(this@ProfileActivity,EditDetails::class.java))
             finish()
         }
 
-        val bottomNavigationView: BottomNavigationView = findViewById(R.id.BottomNavigationView)
+        val bottomNavigationView: BottomNavigationView = findViewById(R.id.profileBottomNavigationView)
 
         bottomNavigationView.setOnItemSelectedListener { menuItem ->
             when (menuItem.itemId) {

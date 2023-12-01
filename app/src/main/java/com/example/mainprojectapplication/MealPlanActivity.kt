@@ -11,7 +11,7 @@ class MealPlanActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_exercises)
 
-        val bottomNavigationView: BottomNavigationView = findViewById(R.id.BottomNavigationView)
+        val bottomNavigationView: BottomNavigationView = findViewById(R.id.mealBottomNavigationView)
 
         // Set up item selection listener
         bottomNavigationView.setOnItemSelectedListener { menuItem ->

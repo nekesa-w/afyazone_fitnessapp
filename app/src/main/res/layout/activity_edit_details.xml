@@ -26,7 +26,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:padding="10dp"
-        app:layout_constraintBottom_toTopOf="@id/BottomNavigationView"
+        app:layout_constraintBottom_toTopOf="@id/editBottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/editdetails">
@@ -37,7 +37,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/weight"
+                android:id="@+id/editweight"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="40dp"
@@ -48,24 +48,24 @@
                 android:textAlignment="textStart"
                 android:textColor="@color/white"
                 android:textSize="20sp"
-                app:layout_constraintBottom_toTopOf="@id/rectangle1"
+                app:layout_constraintBottom_toTopOf="@id/editrectangle1"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/editdetails" />
 
             <NumberPicker
-                android:id="@+id/rectangle1"
+                android:id="@+id/editrectangle1"
                 android:layout_width="90dp"
                 android:layout_height="100dp"
                 android:layout_marginStart="60dp"
                 android:background="@drawable/edittext_border"
-                app:layout_constraintBottom_toTopOf="@id/goalweight"
+                app:layout_constraintBottom_toTopOf="@id/editgoalweight"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/weight" />
+                app:layout_constraintTop_toBottomOf="@id/editweight" />
 
             <TextView
-                android:id="@+id/goalweight"
+                android:id="@+id/editgoalweight"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="40dp"
@@ -76,24 +76,24 @@
                 android:textAlignment="textStart"
                 android:textColor="@color/white"
                 android:textSize="20sp"
-                app:layout_constraintBottom_toTopOf="@id/rectangle4"
+                app:layout_constraintBottom_toTopOf="@id/editrectangle4"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/rectangle1" />
+                app:layout_constraintTop_toBottomOf="@id/editrectangle1" />
 
             <NumberPicker
-                android:id="@+id/rectangle4"
+                android:id="@+id/editrectangle4"
                 android:layout_width="90dp"
                 android:layout_height="100dp"
                 android:layout_marginStart="60dp"
                 android:background="@drawable/edittext_border"
-                app:layout_constraintBottom_toTopOf="@id/height"
+                app:layout_constraintBottom_toTopOf="@id/editheight"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/goalweight" />
+                app:layout_constraintTop_toBottomOf="@id/editgoalweight" />
 
             <TextView
-                android:id="@+id/height"
+                android:id="@+id/editheight"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="40dp"
@@ -102,22 +102,22 @@
                 android:textAlignment="textStart"
                 android:textColor="@color/white"
                 android:textSize="20sp"
-                app:layout_constraintBottom_toTopOf="@id/rectangle2"
+                app:layout_constraintBottom_toTopOf="@id/editrectangle2"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/rectangle4" />
+                app:layout_constraintTop_toBottomOf="@id/editrectangle4" />
 
             <NumberPicker
-                android:id="@+id/rectangle2"
+                android:id="@+id/editrectangle2"
                 android:layout_width="90dp"
                 android:layout_height="100dp"
                 android:layout_marginStart="60dp"
                 android:background="@drawable/edittext_border"
-                app:layout_constraintBottom_toTopOf="@id/age"
-                app:layout_constraintTop_toBottomOf="@id/height" />
+                app:layout_constraintBottom_toTopOf="@id/editage"
+                app:layout_constraintTop_toBottomOf="@id/editheight" />
 
             <TextView
-                android:id="@+id/age"
+                android:id="@+id/editage"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="40dp"
@@ -126,26 +126,26 @@
                 android:textAlignment="textStart"
                 android:textColor="@color/white"
                 android:textSize="20sp"
-                app:layout_constraintBottom_toTopOf="@id/rectangle3"
+                app:layout_constraintBottom_toTopOf="@id/editrectangle3"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/rectangle2" />
+                app:layout_constraintTop_toBottomOf="@id/editrectangle2" />
 
             <NumberPicker
-                android:id="@+id/rectangle3"
+                android:id="@+id/editrectangle3"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginStart="60dp"
                 android:layout_marginEnd="40dp"
                 android:background="@drawable/edittext_border"
                 android:textAlignment="viewStart"
-                app:layout_constraintBottom_toTopOf="@id/gender"
+                app:layout_constraintBottom_toTopOf="@id/editgender"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/age" />
+                app:layout_constraintTop_toBottomOf="@id/editage" />
 
             <TextView
-                android:id="@+id/gender"
+                android:id="@+id/editgender"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="40dp"
@@ -154,24 +154,24 @@
                 android:textAlignment="textStart"
                 android:textColor="@color/white"
                 android:textSize="20sp"
-                app:layout_constraintBottom_toTopOf="@id/radioGroupGender"
+                app:layout_constraintBottom_toTopOf="@id/editradioGroupGender"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/rectangle3" />
+                app:layout_constraintTop_toBottomOf="@id/editrectangle3" />
 
             <RadioGroup
-                android:id="@+id/radioGroupGender"
+                android:id="@+id/editradioGroupGender"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="60dp"
                 android:layout_marginEnd="40dp"
-                app:layout_constraintBottom_toTopOf="@id/goal"
+                app:layout_constraintBottom_toTopOf="@id/editgoal"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/gender">
+                app:layout_constraintTop_toBottomOf="@id/editgender">
 
                 <RadioButton
-                    android:id="@+id/radioButtonMale"
+                    android:id="@+id/editradioButtonMale"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/male"
@@ -179,7 +179,7 @@
                     android:textSize="20sp" />
 
                 <RadioButton
-                    android:id="@+id/radioButtonFemale"
+                    android:id="@+id/editradioButtonFemale"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/female"
@@ -188,7 +188,7 @@
             </RadioGroup>
 
             <TextView
-                android:id="@+id/goal"
+                android:id="@+id/editgoal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="40dp"
@@ -197,24 +197,24 @@
                 android:textAlignment="textStart"
                 android:textColor="@color/white"
                 android:textSize="20sp"
-                app:layout_constraintBottom_toTopOf="@id/radioGroupGoal"
+                app:layout_constraintBottom_toTopOf="@id/editradioGroupGoal"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/details" />
+                app:layout_constraintTop_toBottomOf="@id/editdetails" />
 
             <RadioGroup
-                android:id="@+id/radioGroupGoal"
+                android:id="@+id/editradioGroupGoal"
                 android:layout_width="370dp"
                 android:layout_height="144dp"
                 android:layout_marginStart="60dp"
                 android:textSize="20sp"
-                app:layout_constraintBottom_toTopOf="@id/fit_level"
+                app:layout_constraintBottom_toTopOf="@id/editfit_level"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/goal">
+                app:layout_constraintTop_toBottomOf="@id/editgoal">
 
                 <RadioButton
-                    android:id="@+id/radioButtonLoss"
+                    android:id="@+id/editradioButtonLoss"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Weight Loss"
@@ -222,7 +222,7 @@
                     android:textSize="20sp" />
 
                 <RadioButton
-                    android:id="@+id/radioButtonGain"
+                    android:id="@+id/editradioButtonGain"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Weight Gain"
@@ -230,7 +230,7 @@
                     android:textSize="20sp" />
 
                 <RadioButton
-                    android:id="@+id/radioButtonEndurance"
+                    android:id="@+id/editradioButtonEndurance"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Maintain Weight"
@@ -239,7 +239,7 @@
             </RadioGroup>
 
             <TextView
-                android:id="@+id/fit_level"
+                android:id="@+id/editfit_level"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="40dp"
@@ -248,24 +248,24 @@
                 android:textAlignment="textStart"
                 android:textColor="@color/white"
                 android:textSize="20sp"
-                app:layout_constraintBottom_toTopOf="@id/radioGroupExercise"
+                app:layout_constraintBottom_toTopOf="@id/editradioGroupExercise"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/radioGroupGoal" />
+                app:layout_constraintTop_toBottomOf="@id/editradioGroupGoal" />
 
             <RadioGroup
-                android:id="@+id/radioGroupExercise"
+                android:id="@+id/editradioGroupExercise"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="60dp"
                 android:textSize="20sp"
-                app:layout_constraintBottom_toTopOf="@id/freq_exercise"
+                app:layout_constraintBottom_toTopOf="@id/editfreq_exercise"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/fit_level">
+                app:layout_constraintTop_toBottomOf="@+id/editfit_level">
 
                 <RadioButton
-                    android:id="@+id/radioButtonBeginner"
+                    android:id="@+id/editradioButtonBeginner"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Beginner"
@@ -273,7 +273,7 @@
                     android:textSize="20sp" />
 
                 <RadioButton
-                    android:id="@+id/radioButtonIntermediate"
+                    android:id="@+id/editradioButtonIntermediate"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Intermediate"
@@ -281,7 +281,7 @@
                     android:textSize="20sp" />
 
                 <RadioButton
-                    android:id="@+id/radioButtonExpert"
+                    android:id="@+id/editradioButtonExpert"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Expert"
@@ -291,7 +291,7 @@
             </RadioGroup>
 
             <TextView
-                android:id="@+id/freq_exercise"
+                android:id="@+id/editfreq_exercise"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="40dp"
@@ -300,20 +300,20 @@
                 android:textAlignment="textStart"
                 android:textColor="@color/white"
                 android:textSize="20sp"
-                app:layout_constraintBottom_toTopOf="@id/rectangle5"
+                app:layout_constraintBottom_toTopOf="@id/editrectangle5"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/radioGroupExercise" />
+                app:layout_constraintTop_toBottomOf="@id/editradioGroupExercise" />
 
             <NumberPicker
-                android:id="@+id/rectangle5"
+                android:id="@+id/editrectangle5"
                 android:layout_width="90dp"
                 android:layout_height="100dp"
                 android:layout_marginStart="60dp"
                 android:background="@drawable/edittext_border"
                 app:layout_constraintBottom_toTopOf="@id/confirmEditButton"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/freq_exercise" />
+                app:layout_constraintTop_toBottomOf="@id/editfreq_exercise" />
 
             <Button
                 android:id="@+id/confirmEditButton"
@@ -326,12 +326,12 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/BottomNavigationView" />
+                app:layout_constraintTop_toBottomOf="@id/editBottomNavigationView" />
         </LinearLayout>
     </ScrollView>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/BottomNavigationView"
+        android:id="@+id/editBottomNavigationView"
         app:labelVisibilityMode="labeled"
         app:itemTextColor="@color/bottom_navigation_text_color"
         android:layout_width="0dp"

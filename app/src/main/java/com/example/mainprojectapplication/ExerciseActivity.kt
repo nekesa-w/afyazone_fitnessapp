@@ -40,7 +40,7 @@ class ExerciseActivity : AppCompatActivity() {
             addExerciseItem(exercise)
         }
 
-        val bottomNavigationView: BottomNavigationView = findViewById(R.id.BottomNavigationView)
+        val bottomNavigationView: BottomNavigationView = findViewById(R.id.exercisesBottomNavigationView)
 
         // Set up item selection listener
         bottomNavigationView.setOnItemSelectedListener { menuItem ->

@@ -26,7 +26,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:padding="10dp"
-        app:layout_constraintBottom_toTopOf="@id/BottomNavigationView"
+        app:layout_constraintBottom_toTopOf="@id/detailsBottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/details">
@@ -326,12 +326,12 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/BottomNavigationView" />
+                app:layout_constraintTop_toBottomOf="@id/detailsBottomNavigationView" />
         </LinearLayout>
     </ScrollView>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/BottomNavigationView"
+        android:id="@+id/detailsBottomNavigationView"
         app:labelVisibilityMode="labeled"
         app:itemTextColor="@color/bottom_navigation_text_color"
         android:layout_width="0dp"
