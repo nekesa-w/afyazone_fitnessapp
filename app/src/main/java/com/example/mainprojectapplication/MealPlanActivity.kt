@@ -22,7 +22,7 @@ class MealPlanActivity : AppCompatActivity() {
                     true
                 }
                 R.id.menu_exercise -> {
-                    val intent = Intent(this, MealPlanActivity::class.java)
+                    val intent = Intent(this, ExerciseActivity::class.java)
                     startActivity(intent)
                     true
                 }
