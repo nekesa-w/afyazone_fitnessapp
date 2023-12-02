@@ -11,7 +11,7 @@
         android:id="@+id/exercises"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="40dp"
         android:layout_marginBottom="10dp"
         android:text="Exercises"
         android:textColor="@color/white"
@@ -27,7 +27,6 @@
         android:id="@+id/catexercises"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
         android:textColor="@color/white"
         android:textAlignment="center"
@@ -41,11 +40,10 @@
         android:id="@+id/exerciseRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp"
-        app:layout_constraintBottom_toTopOf="@id/exercisesBottomNavigationView"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/catexercises"/>
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/exercisesBottomNavigationView"

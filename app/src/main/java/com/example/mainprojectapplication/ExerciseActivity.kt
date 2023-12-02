@@ -1,9 +1,8 @@
 package com.example.mainprojectapplication
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.widget.ImageView
-import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -13,29 +12,39 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class ExerciseActivity : AppCompatActivity() {
 
-    private lateinit var exerciseManager: ExerciseManager
-    private lateinit var exerciseContainer: LinearLayout
-    private lateinit var binding : ActivityExercisesBinding
+    private val sharedPreferencesKey = "MySharedPreferences"
     private lateinit var exerciseRecyclerView: RecyclerView
+    private lateinit var displayedArrayList: ArrayList<ExerciseData>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_exercises)
 
-        exerciseManager = ExerciseManager(this)
-        exerciseManager.initializeExercises()
+        var exerciseAdd= ExerciseAdd()
 
-        val sharedPreferences = getSharedPreferences("MySharedPreferences", MODE_PRIVATE)
+        exerciseAdd.addExercises()
+
+        var beginnerExercises = exerciseAdd.beginner
+        var intermediateExercises = exerciseAdd.intermediate
+        var advancedExercises = exerciseAdd.advanced
+
+        val sharedPreferences = getSharedPreferences(sharedPreferencesKey, Context.MODE_PRIVATE)
         val fitnessLevel = sharedPreferences.getString("Exercise", "None")
-        val categoryExercises = exerciseManager.getExercises(fitnessLevel)
 
         displayFitnessLevel(fitnessLevel)
 
-        exerciseContainer = findViewById(R.id.exerciseRecyclerView)
-
-        val adapter = ExerciseAdapter(categoryExercises)
+        exerciseRecyclerView = findViewById(R.id.exerciseRecyclerView)
         exerciseRecyclerView.layoutManager = LinearLayoutManager(this)
-        exerciseRecyclerView.adapter = adapter
+        exerciseRecyclerView.setHasFixedSize(true)
+
+        displayedArrayList = when (fitnessLevel) {
+            "Beginner" -> beginnerExercises
+            "Intermediate" -> intermediateExercises
+            "Advanced" -> advancedExercises
+            else -> ArrayList()
+        }
+
+        getLevelExercises()
 
         val bottomNavigationView: BottomNavigationView = findViewById(R.id.exercisesBottomNavigationView)
 
@@ -72,24 +81,29 @@ class ExerciseActivity : AppCompatActivity() {
     }
 
     private fun displayFitnessLevel(fitnessLevel: String?) {
-        val fitnessLevelTextView: TextView = binding.catexercises
+        val fitnessLevelTextView: TextView = findViewById(R.id.catexercises)
 
         when (fitnessLevel) {
             "Beginner" -> {
-                fitnessLevelTextView.text = "Exercises based on your fitness level: Beginner Exercises"
+                fitnessLevelTextView.text = "Beginner Exercises"
             }
 
             "Intermediate" -> {
-                fitnessLevelTextView.text = "Exercises based on your fitness level: Intermediate Exercises"
+                fitnessLevelTextView.text = "Intermediate Exercises"
             }
 
             "Advanced" -> {
-                fitnessLevelTextView.text = "Exercises based on your fitness level: Advanced Exercises"
+                fitnessLevelTextView.text = "Advanced Exercises"
             }
 
             else -> {
-                fitnessLevelTextView.text = "Fitness Level Not Specified"
+                fitnessLevelTextView.text = "Fitness Level not specified:\nExercises not displayed"
             }
         }
+    }
+
+    private fun getLevelExercises(){
+        val adapter = ExerciseAdapter(displayedArrayList)
+        exerciseRecyclerView.adapter = adapter
     }
 }
