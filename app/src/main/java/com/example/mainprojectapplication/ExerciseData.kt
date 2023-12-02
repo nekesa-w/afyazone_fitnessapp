@@ -131,5 +131,4 @@ class ExerciseManager(private val context: Context) {
         saveExercises("intermediate", intermediateExercises)
         saveExercises("advanced", advancedExercises)
     }
-
 }

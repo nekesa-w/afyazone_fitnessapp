@@ -29,29 +29,23 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
-        android:text="Exercises"
         android:textColor="@color/white"
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/exercises"
-        app:layout_constraintBottom_toTopOf="@id/scrollexercise"/>
+        app:layout_constraintBottom_toTopOf="@id/exerciseRecyclerView"/>
 
-    <ScrollView
-        android:id="@+id/scrollexercise"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/exerciseRecyclerView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <LinearLayout
-            android:id="@+id/exerciseContainer"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <!-- Exercise items will be added dynamically here -->
-        </LinearLayout>
-
-    </ScrollView>
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@id/exercisesBottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/catexercises"/>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/exercisesBottomNavigationView"

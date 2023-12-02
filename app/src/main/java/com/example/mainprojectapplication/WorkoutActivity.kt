@@ -9,7 +9,7 @@ class WorkoutActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_exercises)
+        setContentView(R.layout.activity_workout)
 
         val bottomNavigationView: BottomNavigationView = findViewById(R.id.workoutBottomNavigationView)
 

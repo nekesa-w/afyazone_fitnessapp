@@ -6,7 +6,8 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import com.bumptech.glide.Glide
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.mainprojectapplication.databinding.ActivityExercisesBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
@@ -15,6 +16,7 @@ class ExerciseActivity : AppCompatActivity() {
     private lateinit var exerciseManager: ExerciseManager
     private lateinit var exerciseContainer: LinearLayout
     private lateinit var binding : ActivityExercisesBinding
+    private lateinit var exerciseRecyclerView: RecyclerView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,16 +31,11 @@ class ExerciseActivity : AppCompatActivity() {
 
         displayFitnessLevel(fitnessLevel)
 
-        exerciseContainer = findViewById(R.id.exerciseContainer)
+        exerciseContainer = findViewById(R.id.exerciseRecyclerView)
 
-        val selectedCategory = getSharedPreferences("ExercisePreferences", MODE_PRIVATE)
-            .getString("exercises", "beginner")
-
-        val exercises = ExerciseManager(this).getExercises(selectedCategory)
-
-        for (exercise in exercises) {
-            addExerciseItem(exercise)
-        }
+        val adapter = ExerciseAdapter(categoryExercises)
+        exerciseRecyclerView.layoutManager = LinearLayoutManager(this)
+        exerciseRecyclerView.adapter = adapter
 
         val bottomNavigationView: BottomNavigationView = findViewById(R.id.exercisesBottomNavigationView)
 
@@ -79,15 +76,15 @@ class ExerciseActivity : AppCompatActivity() {
 
         when (fitnessLevel) {
             "Beginner" -> {
-                fitnessLevelTextView.text = "Exercises based on your fitness level: Beginner"
+                fitnessLevelTextView.text = "Exercises based on your fitness level: Beginner Exercises"
             }
 
             "Intermediate" -> {
-                fitnessLevelTextView.text = "Exercises based on your fitness level: Intermediate"
+                fitnessLevelTextView.text = "Exercises based on your fitness level: Intermediate Exercises"
             }
 
             "Advanced" -> {
-                fitnessLevelTextView.text = "Exercises based on your fitness level: Advanced"
+                fitnessLevelTextView.text = "Exercises based on your fitness level: Advanced Exercises"
             }
 
             else -> {
@@ -95,23 +92,4 @@ class ExerciseActivity : AppCompatActivity() {
             }
         }
     }
-
-    private fun addExerciseItem(exercise: ExerciseData) {
-        val exerciseItemView = layoutInflater.inflate(R.layout.item_exercise, exerciseContainer, false)
-
-        val titleTextView: TextView = exerciseItemView.findViewById(R.id.titleTextView)
-        val instructionTextView: TextView = exerciseItemView.findViewById(R.id.instructionTextView)
-        val imageView: ImageView = exerciseItemView.findViewById(R.id.exerciseImageView)
-
-        titleTextView.text = exercise.name
-        instructionTextView.text = exercise.instruction
-        imageView.setImageResource(resources.getIdentifier(exercise.imagePath, null, packageName))
-
-        Glide.with(this)
-            .load(resources.getIdentifier(exercise.imagePath, null, packageName))
-            .into(imageView)
-
-        exerciseContainer.addView(exerciseItemView)
-    }
-
 }
