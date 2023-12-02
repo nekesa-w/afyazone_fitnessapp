@@ -12,7 +12,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MainProjectApplication"
         tools:targetApi="31">
-
+        <activity
+            android:name=".MealPlanActivity2"
+            android:exported="false"
+            android:label="@string/title_activity_meal_plan2"
+            android:theme="@style/Theme.MainProjectApplication" />
+        <activity
+            android:name=".CreateMealActivity"
+            android:exported="false"
+            android:label="@string/title_activity_create_meal"
+            android:theme="@style/Theme.MainProjectApplication" />
         <activity
             android:name=".DetailsActivity"
             android:exported="false" />

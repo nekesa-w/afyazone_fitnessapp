@@ -1,0 +1,155 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/green"
+    android:orientation="vertical"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginBottom="20dp"
+    tools:context=".MealListFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Day 1"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="Breakfast"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        android:text="2 eggs "
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        android:text="4 slices of bread"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        android:text="4 pieces of bacon"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="Lunch"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        android:text="50g beef"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        android:text="100g brown rice"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        android:text="Mixed salad"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="Dinner"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        android:text="50g beef"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        android:text="100g ugali"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        android:text="75g chicken breast"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        />
+
+    <Button
+        android:id="@+id/btnCloseFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Close"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/black"/>
+
+</LinearLayout>
