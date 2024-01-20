@@ -1,6 +1,6 @@
-# FitBuddy - Your Ultimate Fitness Companion
+# AfyaZone - Your Ultimate Fitness Companion
 
-FitBuddy is a fitness application built with Kotlin, designed to help you achieve your health and wellness goals. Whether you're a beginner or a seasoned fitness enthusiast, FitBuddy provides a personalized and comprehensive experience to enhance your fitness journey.
+AfyaZone is a fitness application built with Kotlin, designed to help you achieve your health and wellness goals. Whether you're a beginner or a seasoned fitness enthusiast, AfyaZone provides a personalized and comprehensive experience to enhance your fitness journey.
 
 ## Features
 
@@ -16,7 +16,7 @@ FitBuddy is a fitness application built with Kotlin, designed to help you achiev
 
 ## Installation
 
-To install FitBuddy on your Android device, follow these steps:
+To install AfyaZone on your Android device, follow these steps:
 
 1. **Clone Repository:**
    ```
@@ -30,13 +30,13 @@ To install FitBuddy on your Android device, follow these steps:
 3. **Build and Run:**
    - Build the project and run it on your Android emulator or physical device.
 
-4. **Explore FitBuddy:**
+4. **Explore AfyaZone:**
    - Navigate through the app to explore its features and functionalities.
 
 ## Usage
 
 1. **User Registration:**
-   - Create a user account to personalize your FitBuddy experience.
+   - Create a user account to personalize your AfyaZone experience.
    - Set your fitness goals and preferences during the onboarding process.
 
 2. **Discover Workouts:**
@@ -57,12 +57,12 @@ To install FitBuddy on your Android device, follow these steps:
 
 ## Contributing
 
-If you'd like to contribute to FitBuddy, please check our [contribution guidelines](CONTRIBUTING.md) and submit a pull request.
+If you'd like to contribute to AfyaZone, please check our [contribution guidelines](CONTRIBUTING.md) and submit a pull request.
 
 ## License
 
-FitBuddy is licensed under the [Apache License 2.0](LICENSE).
+AfyaZone is licensed under the [Apache License 2.0](LICENSE).
 
 ---
 
-Thank you for choosing FitBuddy as your fitness companion! We're committed to helping you achieve your fitness goals. If you encounter any issues or have suggestions for improvement, please feel free to [submit an issue](https://github.com/your/repository/issues). Stay fit and healthy!
+Thank you for choosing AfyaZone as your fitness companion! We're committed to helping you achieve your fitness goals. If you encounter any issues or have suggestions for improvement, please feel free to [submit an issue](https://github.com/your/repository/issues). Stay fit and healthy!
