@@ -61,5 +61,3 @@ To install AfyaZone on your Android device, follow these steps:
 ## License
 
 AfyaZone is licensed under the [Apache License 2.0](LICENSE).
-
----
