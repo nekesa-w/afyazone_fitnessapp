@@ -2,6 +2,13 @@
 
 AfyaZone is a fitness application built with Kotlin, designed to help you achieve your health and wellness goals. Whether you're a beginner or a seasoned fitness enthusiast, AfyaZone provides a personalized and comprehensive experience to enhance your fitness journey.
 
+## App
+![Screenshot (363)](https://github.com/nekesa-w/fitness-app/assets/111288471/d69e32f5-8bb0-4c71-96ee-5c3027d7a414)
+
+![Screenshot (364)](https://github.com/nekesa-w/fitness-app/assets/111288471/c52cf64e-d6fb-4bd5-92a6-c371aa42a74c)
+
+![Screenshot (365)](https://github.com/nekesa-w/fitness-app/assets/111288471/017158d0-faa9-4fcb-8df2-24743ebad6d8)
+
 ## Features
 
 - **Workout Plans:** Access a variety of workout plans catering to different fitness levels and goals.
@@ -51,18 +58,8 @@ To install AfyaZone on your Android device, follow these steps:
    - Log your meals and track your daily nutritional intake.
    - Receive insights and recommendations based on your dietary habits.
 
-5. **Stay Connected:**
-   - Connect with friends and fitness buddies to share achievements and stay accountable.
-   - Participate in challenges and compete with others to boost motivation.
-
-## Contributing
-
-If you'd like to contribute to AfyaZone, please check our [contribution guidelines](CONTRIBUTING.md) and submit a pull request.
-
 ## License
 
 AfyaZone is licensed under the [Apache License 2.0](LICENSE).
 
 ---
-
-Thank you for choosing AfyaZone as your fitness companion! We're committed to helping you achieve your fitness goals. If you encounter any issues or have suggestions for improvement, please feel free to [submit an issue](https://github.com/your/repository/issues). Stay fit and healthy!
