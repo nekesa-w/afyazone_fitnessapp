@@ -1,6 +1,6 @@
-# AfyaZone - Your Ultimate Fitness Companion
+# AfyaZone - Fitness App
 
-AfyaZone is a fitness application built with Kotlin, designed to help you achieve your health and wellness goals. Whether you're a beginner or a seasoned fitness enthusiast, AfyaZone provides a personalized and comprehensive experience to enhance your fitness journey.
+AfyaZone is a fitness application built with Kotlin, designed to help achieve health and wellness goals. Whether a beginner or a seasoned fitness enthusiast, AfyaZone provides a personalized and comprehensive experience to enhance the fitness journey.
 
 ## App
 ![Screenshot (363)](https://github.com/nekesa-w/fitness-app/assets/111288471/d69e32f5-8bb0-4c71-96ee-5c3027d7a414)
