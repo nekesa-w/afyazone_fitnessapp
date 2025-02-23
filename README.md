@@ -27,7 +27,7 @@ To install AfyaZone on your Android device, follow these steps:
 
 1. **Clone Repository:**
    ```
-   git clone https://github.com/nekesa-w/fitness-app.git
+   git clone https://github.com/nekesa-w/afyazone_fitnessapp.git
    ```
 
 2. **Open in Android Studio:**
